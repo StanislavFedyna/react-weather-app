@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import Info from './components/info';
 import Form from './components/form'
 import Weather from './components/weather';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTemperatureLow, faCity, faCloudSun, faExclamation} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faTemperatureLow, faCity, faCloudSun, faExclamation);
+
 
 const API_KEY = '13ded9ef0bba1538ab5f79e98a8c447c';
 

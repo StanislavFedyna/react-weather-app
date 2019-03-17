@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Weather(props) {
 
@@ -8,10 +9,11 @@ export default function Weather(props) {
     <div className="infoWeath">
       { cityData &&
       <div>
-        <p>Place: {countryData}, {cityData}</p>
-        <p>Temperature: {temperatureData}</p>
-        <p>Pressure: {pressureData}</p>
-        <p>Sunset: {sunsetData}</p>
+
+        <p> <FontAwesomeIcon icon="city" /> Place: {countryData}, {cityData}</p>
+        <p> <FontAwesomeIcon icon="temperature-low" /> Temperature: {temperatureData}</p>
+        <p> <FontAwesomeIcon icon="exclamation" /> Pressure: {pressureData}</p>
+        <p> <FontAwesomeIcon icon="cloud-sun" /> Sunset: {sunsetData}</p>
       </div>
       }
 
